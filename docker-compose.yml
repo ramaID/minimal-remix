@@ -1,0 +1,11 @@
+services:
+  app:
+    user: 1000:1000
+    build:
+      context: .
+      dockerfile: Dockerfile.local
+    volumes:
+      - ./:/opt/app:rw
+    ports:
+      - 3000:3000 # remix
+      - 3010:3010 # vite hmr

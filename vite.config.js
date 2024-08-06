@@ -13,4 +13,10 @@ export default defineConfig({
       plugins: [],
     }),
   ],
+  server: {
+    hmr: {
+      port: 3010,
+    },
+    port: 3000,
+  }
 })
